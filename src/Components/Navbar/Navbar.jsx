@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import logo from "../../assets/logo.png";
 import arrow from "../../assets/arrow_icon.png";
 import { CoinContext } from "../../Context/CoinContext";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
 
@@ -30,9 +31,9 @@ const Navbar = () => {
 
   return (
     <div className="flex items-center justify-between text-[#ddd] py-5 px-[5%] md:py-5 md:px-[10%] border-b border-[#efd4d4]">
-      <img src={logo} alt="" className="max-w-[max(12vw,120px)]" />
+      <Link to={`/`} ><img src={logo} alt="" className="max-w-[max(12vw,120px)]" /></Link>
       <ul className="md:flex space-x-6 hidden">
-      <li className="border-b-2 border-transparent hover:border-white">Home</li>
+        <Link to={`/`}><li className="border-b-2 border-transparent hover:border-white">Home</li></Link>
         <li className="border-b-2 border-transparent hover:border-white">Features</li>
         <li className="border-b-2 border-transparent hover:border-white">Pricing</li>
         <li className="border-b-2 border-transparent hover:border-white">Blog</li>
