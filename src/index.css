@@ -27,4 +27,16 @@
       transform: rotate(360deg);
     }
   }
+
+  .coin-info ul{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0px;
+    border-bottom: 1px solid #5f5d5f;
+    list-style: none;
+  }
+
+  .coin-info ul li:last-child{
+    font-weight: 300;
+  }
 }
